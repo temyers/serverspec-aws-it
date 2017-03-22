@@ -2,7 +2,7 @@ require 'spec_helper'
 
 include Serverspec::Type::AWS
 
-ec2 = Aws::EC2::Client.new(:region 'us-east-1')
+ec2 = Aws::EC2::Client.new(:region => 'us-east-1')
 
 describe "Serverspec AWS" do
 

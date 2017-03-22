@@ -6,10 +6,8 @@ ec2 = Aws::EC2::Client.new(:region => 'us-east-1')
 
 describe "Serverspec AWS" do
 
-  describe foo = EC2::VPC.new('bobbins', ec2) do
-    it "should be defined" do
-      expect( foo ).to be
-    end
+  it "should resolve" do
+      expect { EC2::VPC.new('bobbins', ec2) }.to raise_error(Aws::EC2::Errors::InvalidVpcIDNotFound)
   end
 
 end

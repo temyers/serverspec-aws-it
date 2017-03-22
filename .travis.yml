@@ -8,4 +8,4 @@ rvm:
 
 script:
   - bundle install --with development
-  - bundle exec rake test
+  - bundle exec rake

@@ -16,7 +16,7 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (4.1.0)
     net-telnet (0.1.1)
-    rake (12.0.0)
+    rake (13.0.1)
     require_all (1.4.0)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
@@ -55,9 +55,9 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk (~> 2)
-  rake
+  rake (>= 12.3.3)
   serverspec (~> 2)
   serverspec-aws
 
 BUNDLED WITH
-   1.14.6
+   1.17.3
